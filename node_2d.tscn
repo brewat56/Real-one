@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cqlvdgvvuiqbt"]
+[gd_scene load_steps=8 format=3 uid="uid://cqlvdgvvuiqbt"]
 
 [ext_resource type="Texture2D" uid="uid://dyygaoc3wincc" path="res://kenney_new-platformer-pack-1.1/Spritesheets/spritesheet-enemies-default.png" id="1_epypp"]
 [ext_resource type="Texture2D" uid="uid://31piepo6vidv" path="res://kenney_new-platformer-pack-1.1/Spritesheets/spritesheet-backgrounds-default.png" id="2_0hol4"]
@@ -4520,7 +4520,7 @@ texture = ExtResource("2_0hol4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj586"]
 texture = ExtResource("3_q6r6c")
-texture_region_size = Vector2i(65, 58)
+texture_region_size = Vector2i(65, 65)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -9234,8 +9234,11 @@ sources/7 = SubResource("TileSetAtlasSource_kdubu")
 sources/8 = SubResource("TileSetAtlasSource_d21ai")
 sources/9 = SubResource("TileSetAtlasSource_rj586")
 
-[node name="Node2D" type="Node2D" unique_id=1781804183]
+[node name="Node2D" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="." unique_id=195280721]
+[node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4d7sh")
 format = 2
+layer_0/tile_data = PackedInt32Array(262143, 131081, 0, 262139, 655369, 0, 196611, 655369, 0, -65536, 9, 3, 196615, 1048585, 0, 196619, 1048585, 0, 196623, 1048585, 0, 262135, 1048585, 0, 262131, 1048585, 0, 262127, 1048585, 0, 262123, 262153, 0, 262119, 1048585, 0, 262115, 1048585, 0, 131056, 327689, 1, 196627, 786441, 1, 196631, 786441, 1, 196635, 786441, 1, 131061, 327689, 1, 262111, 589833, 1, -786481, 786441, 1, -786485, 786441, 1, -786489, 786441, 1, -65529, 1048585, 6, -9, 983049, 6, 131051, 393225, 1, 131043, 327689, 1)
+layer_1/name = "Layer1"
+layer_1/navigation_enabled = false

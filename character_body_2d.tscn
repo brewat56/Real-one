@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://1fe1x8sy7gnf"]
+[gd_scene load_steps=3 format=3 uid="uid://1fe1x8sy7gnf"]
 
 [ext_resource type="Texture2D" uid="uid://ckc3w2nbt7ln5" path="res://Gemini_Generated_Image_dawbkadawbkadawb-removebg-preview.png" id="1_f50pn"]
 
@@ -13,11 +13,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1656595973]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(-126, -127)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1762463069]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1371284217]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(13, -120)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
