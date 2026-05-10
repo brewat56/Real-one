@@ -1,23 +1,86 @@
-[gd_scene load_steps=3 format=3 uid="uid://1fe1x8sy7gnf"]
+[gd_scene load_steps=13 format=3 uid="uid://1fe1x8sy7gnf"]
 
-[ext_resource type="Texture2D" uid="uid://ckc3w2nbt7ln5" path="res://Gemini_Generated_Image_dawbkadawbkadawb-removebg-preview.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://0qokb33ojcu0" path="res://character_body_2d.gd" id="1_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://bcn10aev2teab" path="res://Pizza robot (2).png" id="2_ghijl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44cfe"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dd465"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhvu3"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sjlk"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp52p"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ct3r"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kp85"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnedo"]
+atlas = ExtResource("2_ghijl")
+region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ij6vw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_f50pn")
+"texture": SubResource("AtlasTexture_44cfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dd465")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhvu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sjlk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp52p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ct3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1kp85")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnedo")
 }],
 "loop": true,
-"name": &"default",
+"name": &"new_animation",
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-position = Vector2(-126, -127)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyqjk"]
+size = Vector2(34.5, 60)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Pizza robot (player)" type="CharacterBody2D"]
+position = Vector2(0, -44)
+script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(13, -120)
+scale = Vector2(2.90625, 2.90625)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.0411238
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 12)
+shape = SubResource("RectangleShape2D_wyqjk")
