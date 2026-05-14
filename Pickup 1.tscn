@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b1fr85w0rkse0"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="."]
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="."]

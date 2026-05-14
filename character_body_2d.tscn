@@ -236,6 +236,7 @@ size = Vector2(34.5, 60)
 
 [node name="Pizza robot (player)" type="CharacterBody2D"]
 position = Vector2(0, -44)
+collision_layer = 3
 script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
