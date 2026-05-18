@@ -1,5 +1,24 @@
-[gd_scene format=3 uid="uid://bead8d3g28ep8"]
+[gd_scene load_steps=3 format=3 uid="uid://bead8d3g28ep8"]
+
+[ext_resource type="Texture2D" uid="uid://cnww2avury2e2" path="res://kenney_new-platformer-pack-1.1/Spritesheets/spritesheet-tiles-double.png" id="1_8bjct"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7sysk"]
+size = Vector2(406.707, 22.7191)
 
 [node name="AnimatableBody2D" type="AnimatableBody2D"]
+position = Vector2(4, -7)
+scale = Vector2(0.620359, 0.734866)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.515068, 0.524419)
+texture = ExtResource("1_8bjct")
+region_enabled = true
+region_rect = Rect2(771.6, 1031.1, 392.03, 107.718)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.19209e-07, 0)
+rotation = -3.14159
+scale = Vector2(0.486837, -2.37685)
+shape = SubResource("RectangleShape2D_7sysk")
+one_way_collision = true
